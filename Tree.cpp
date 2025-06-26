@@ -70,5 +70,15 @@ class BinaryTree
                 return;
             }
 
+            //step 7: if the values in the data field of the new Node is greater than that of the parent
+            else if (x > parent->info)
+            {
+                // 7a : make the right child of parent point to the new node
+                parent->rightchild = newNode;
+
+                // 7b : exit
+                return;
+            }
+
         }
 };

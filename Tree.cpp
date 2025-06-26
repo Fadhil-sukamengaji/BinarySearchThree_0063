@@ -95,4 +95,11 @@ class BinaryTree
                     currentNode = currentNode->rightchild;
             }
         }
+
+        bool isEmpty()
+        {
+            // checks if the tree is empty
+            return ROOT == nullptr;
+        }
+        
 };
